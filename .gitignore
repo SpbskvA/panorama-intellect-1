@@ -1,2 +1,2 @@
-*.git
-*.sqlite3
+.git
+.sqlite3
