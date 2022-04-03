@@ -1,0 +1,784 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+<html>
+
+<head>
+    <title>ИА Панорама Интеллект</title>
+    <link rel="stylesheet" href="{% static 'main/style.css' %}">
+    <link rel="icon" href="{% static 'main/images/ia-panorama.png' %}" type="image/png">
+    <link rel="shortcut icon" href="{% static 'main/images/ia-panorama.png' %}" type="image/png">
+    <script type="text/javascript" src="https://vk.com/js/api/share.js?93" charset="windows-1251"></script>
+</head>
+<a href="#" сlass="floating-button"> <img id="fckblsht" src="{% static 'main/images/ia-panorama.png' %}"> </a>
+<header>
+    <div class="headerbutton"><a target="_blank" href="offer">Предложить новость</a></div>
+    <div class="headerbutton"><a target="_blank" href="https://t.me/PanoramaIntellectBot">Подписаться на рассылку</a></div>
+</header>
+
+<body>
+    <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <div class="tradingview-widget-copyright"></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+            {
+                "symbols": [{
+                        "description": "USD/RUB",
+                        "proName": "FOREXCOM:USDRUB"
+                    },
+                    {
+                        "description": "EUR/RUB",
+                        "proName": "FOREXCOM:EURRUB"
+                    },
+                    {
+                        "description": "EUR/USD",
+                        "proName": "FX:EURUSD"
+                    },
+                    {
+                        "description": "GBP/RUB",
+                        "proName": "FX_IDC:GBPRUB"
+                    },
+                    {
+                        "description": "CNY/RUB",
+                        "proName": "FX_IDC:CNYRUB"
+                    },
+                    {
+                        "description": "CHF/RUB",
+                        "proName": "FX_IDC:CHFRUB"
+                    },
+                    {
+                        "description": "Нефть Brent",
+                        "proName": "TVC:UKOIL"
+                    },
+                    {
+                        "description": "Природный газ",
+                        "proName": "BLACKBULL:NGAS.F"
+                    },
+                    {
+                        "description": "Золото",
+                        "proName": "TVC:GOLD"
+                    },
+                    {
+                        "description": "Платина",
+                        "proName": "TVC:PLATINUM"
+                    },
+                    {
+                        "description": "Серебро",
+                        "proName": "TVC:SILVER"
+                    },
+                    {
+                        "description": "Никель",
+                        "proName": "CAPITALCOM:NICKEL"
+                    },
+                    {
+                        "description": "Сахар",
+                        "proName": "PEPPERSTONE:SUGAR"
+                    },
+                    {
+                        "description": "Индекс Мосбиржи",
+                        "proName": "MOEX:IMOEX"
+                    },
+                    {
+                        "description": "Индекс РТС",
+                        "proName": "MOEX:RTSI"
+                    },
+                    {
+                        "description": "Индекс S&P 500",
+                        "proName": "CURRENCYCOM:US500"
+                    },
+                    {
+                        "description": "Индекс NASDAQ",
+                        "proName": "FRED:NASDAQCOM"
+                    },
+                    {
+                        "description": "Индекс DAX",
+                        "proName": "XETR:DAX"
+                    },
+                    {
+                        "description": "BTC/USD",
+                        "proName": "COINBASE:BTCUSD"
+                    },
+                    {
+                        "description": "ETH/USD",
+                        "proName": "COINBASE:ETHUSD"
+                    },
+                    {
+                        "description": "BNB/USD",
+                        "proName": "BINANCE:BNBUSD"
+                    },
+                    {
+                        "description": "SHIB/USD",
+                        "proName": "COINBASE:SHIBUSD"
+                    },
+                    {
+                        "description": "Сбер",
+                        "proName": "CAPITALCOM:SBERRU"
+                    },
+                    {
+                        "description": "ВТБ",
+                        "proName": "CAPITALCOM:VTBRRU"
+                    },
+                    {
+                        "description": "Тинькофф",
+                        "proName": "MOEX:TCSG"
+                    },
+                    {
+                        "description": "Сбер привилегированные",
+                        "proName": "CAPITALCOM:SBERPRU"
+                    },
+                    {
+                        "description": "МКБ",
+                        "proName": "CAPITALCOM:CBOMRU"
+                    },
+                    {
+                        "description": "Газпром",
+                        "proName": "CAPITALCOM:GAZPRU"
+                    },
+                    {
+                        "description": "Роснефть",
+                        "proName": "CAPITALCOM:ROSNRU"
+                    },
+                    {
+                        "description": "Новатэк",
+                        "proName": "CAPITALCOM:NVTKRU"
+                    },
+                    {
+                        "description": "Лукойл",
+                        "proName": "CAPITALCOM:LKOHRU"
+                    },
+                    {
+                        "description": "Сургутнефтегаз",
+                        "proName": "CAPITALCOM:SNGSRU"
+                    },
+                    {
+                        "description": "Сургутнефтегаз привилегированные",
+                        "proName": "CAPITALCOM:SNGSPRU"
+                    },
+                    {
+                        "description": "Татнефть",
+                        "proName": "CAPITALCOM:TATNRU"
+                    },
+                    {
+                        "description": "Норникель",
+                        "proName": "CAPITALCOM:GMKNRU"
+                    },
+                    {
+                        "description": "Северсталь",
+                        "proName": "CAPITALCOM:CHMFRU"
+                    },
+                    {
+                        "description": "НЛМК",
+                        "proName": "CAPITALCOM:NLMKRU"
+                    },
+                    {
+                        "description": "ММК",
+                        "proName": "CAPITALCOM:MAGNRU"
+                    },
+                    {
+                        "description": "РусАл",
+                        "proName": "CAPITALCOM:RUALRU"
+                    },
+                    {
+                        "description": "Полиметалл",
+                        "proName": "CAPITALCOM:POLYRU"
+                    },
+                    {
+                        "description": "Алроса",
+                        "proName": "CAPITALCOM:ALRSRU"
+                    },
+                    {
+                        "description": "Полюс Золото",
+                        "proName": "CAPITALCOM:PLZLRU"
+                    },
+                    {
+                        "description": "ФосАгро",
+                        "proName": "CAPITALCOM:PHORRU"
+                    },
+                    {
+                        "description": "Распадская",
+                        "proName": "CAPITALCOM:RASPRU"
+                    },
+                    {
+                        "description": "Мечел",
+                        "proName": "CAPITALCOM:MTLRRU"
+                    },
+                    {
+                        "description": "Мечел привилегированные ",
+                        "proName": "CAPITALCOM:MTLRPRU"
+                    },
+                    {
+                        "description": "ВСМПО-Ависма",
+                        "proName": "CAPITALCOM:VSMORU"
+                    },
+                    {
+                        "description": "Русолово",
+                        "proName": "MOEX:ROLO"
+                    },
+                    {
+                        "description": "Сегежа",
+                        "proName": "MOEX:SGZH"
+                    },
+                    {
+                        "description": "Яндекс",
+                        "proName": "CAPITALCOM:YNDXRU"
+                    },
+                    {
+                        "description": "VK",
+                        "proName": "MOEX:VKCO"
+                    },
+                    {
+                        "description": "ПИК",
+                        "proName": "CAPITALCOM:PIKKRU"
+                    },
+                    {
+                        "description": "Группа ЛСР",
+                        "proName": "CAPITALCOM:LSRGRU"
+                    },
+                    {
+                        "description": "ГК Самолёт",
+                        "proName": "MOEX:SMLT"
+                    },
+                    {
+                        "description": "МТС",
+                        "proName": "CAPITALCOM:MTSSRU"
+                    },
+                    {
+                        "description": "АФК Система",
+                        "proName": "CAPITALCOM:AFKSRU"
+                    },
+                    {
+                        "description": "Ростелеком",
+                        "proName": "CAPITALCOM:RTKMRU"
+                    },
+                    {
+                        "description": "Ростелеком привилегированные ",
+                        "proName": "CAPITALCOM:RTKMPRU"
+                    },
+                    {
+                        "description": "Aэрофлот",
+                        "proName": "CAPITALCOM:AFLTRU"
+                    },
+                    {
+                        "description": "X5 Retail Group",
+                        "proName": "MOEX:FIVE"
+                    },
+                    {
+                        "description": "Магнит",
+                        "proName": "CAPITALCOM:MGNTRU"
+                    },
+                    {
+                        "description": "Детский Мир",
+                        "proName": "CAPITALCOM:DSKYRU"
+                    },
+                    {
+                        "description": "РусАгро",
+                        "proName": "MOEX:AGRO"
+                    },
+                    {
+                        "description": "Лента",
+                        "proName": "MOEX:LENT"
+                    },
+                    {
+                        "description": "М.Видео",
+                        "proName": "CAPITALCOM:MVIDRU"
+                    },
+                    {
+                        "description": "Apple",
+                        "proName": "NASDAQ:AAPL"
+                    },
+                    {
+                        "description": "Microsoft",
+                        "proName": "NASDAQ:MSFT"
+                    },
+                    {
+                        "description": "Google",
+                        "proName": "NASDAQ:GOOGL"
+                    },
+                    {
+                        "description": "Amazon",
+                        "proName": "NASDAQ:AMZN"
+                    },
+                    {
+                        "description": "Tesla",
+                        "proName": "NASDAQ:TSLA"
+                    },
+                    {
+                        "description": "Nvidia",
+                        "proName": "NASDAQ:NVDA"
+                    },
+                    {
+                        "description": "Facebook",
+                        "proName": "NASDAQ:FB"
+                    },
+                    {
+                        "description": "Mastercard",
+                        "proName": "NYSE:MA"
+                    },
+                    {
+                        "description": "Visa",
+                        "proName": "NYSE:V"
+                    },
+                    {
+                        "description": "J.P. Morgan Chase",
+                        "proName": "NYSE:JPM"
+                    },
+                    {
+                        "description": "Citigroup",
+                        "proName": "NYSE:C"
+                    },
+                    {
+                        "description": "Bank of America",
+                        "proName": "NYSE:BAC"
+                    },
+                    {
+                        "description": "Goldman Sachs",
+                        "proName": "NYSE:GS"
+                    },
+                    {
+                        "description": "Morgan Stanley",
+                        "proName": "NYSE:MS"
+                    },
+                    {
+                        "description": "Wells Fargo & Company",
+                        "proName": "NYSE:WFC"
+                    },
+                    {
+                        "description": "The Bank of New York Mellon",
+                        "proName": "NYSE:BK"
+                    },
+                    {
+                        "description": "TAL",
+                        "proName": "NYSE:TAL"
+                    },
+                    {
+                        "description": "Virgin Galactic",
+                        "proName": "NYSE:SPCE"
+                    },
+                    {
+                        "description": "Astra Space",
+                        "proName": "NASDAQ:ASTR"
+                    }
+                ],
+                "showSymbolLogo": true,
+                "colorTheme": "dark",
+                "isTransparent": false,
+                "displayMode": "adaptive",
+                "locale": "ru"
+            }
+        </script>
+    </div>
+    <div class="articles">
+        {%for article in articles%}
+        <figure class="article">
+            <div class="content">
+                <img class="image" src="{{ article.image }}" alt="ls-sample1" />
+                <div class="date">{{ article.date }}</div>
+                <p></p>
+                <h3>{{ article.name }}</h3>
+                <p>
+                    {{ article.info|safe }}
+                </p>
+            </div>
+        </figure>
+        {% endfor %}
+    </div>
+    <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <div class="tradingview-widget-copyright"></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+            {
+                "symbols": [{
+                        "description": "USD/RUB",
+                        "proName": "FOREXCOM:USDRUB"
+                    },
+                    {
+                        "description": "EUR/RUB",
+                        "proName": "FOREXCOM:EURRUB"
+                    },
+                    {
+                        "description": "EUR/USD",
+                        "proName": "FX:EURUSD"
+                    },
+                    {
+                        "description": "GBP/RUB",
+                        "proName": "FX_IDC:GBPRUB"
+                    },
+                    {
+                        "description": "CNY/RUB",
+                        "proName": "FX_IDC:CNYRUB"
+                    },
+                    {
+                        "description": "CHF/RUB",
+                        "proName": "FX_IDC:CHFRUB"
+                    },
+                    {
+                        "description": "Нефть Brent",
+                        "proName": "TVC:UKOIL"
+                    },
+                    {
+                        "description": "Природный газ",
+                        "proName": "BLACKBULL:NGAS.F"
+                    },
+                    {
+                        "description": "Золото",
+                        "proName": "TVC:GOLD"
+                    },
+                    {
+                        "description": "Платина",
+                        "proName": "TVC:PLATINUM"
+                    },
+                    {
+                        "description": "Серебро",
+                        "proName": "TVC:SILVER"
+                    },
+                    {
+                        "description": "Никель",
+                        "proName": "CAPITALCOM:NICKEL"
+                    },
+                    {
+                        "description": "Сахар",
+                        "proName": "PEPPERSTONE:SUGAR"
+                    },
+                    {
+                        "description": "Индекс Мосбиржи",
+                        "proName": "MOEX:IMOEX"
+                    },
+                    {
+                        "description": "Индекс РТС",
+                        "proName": "MOEX:RTSI"
+                    },
+                    {
+                        "description": "Индекс S&P 500",
+                        "proName": "CURRENCYCOM:US500"
+                    },
+                    {
+                        "description": "Индекс NASDAQ",
+                        "proName": "FRED:NASDAQCOM"
+                    },
+                    {
+                        "description": "Индекс DAX",
+                        "proName": "XETR:DAX"
+                    },
+                    {
+                        "description": "BTC/USD",
+                        "proName": "COINBASE:BTCUSD"
+                    },
+                    {
+                        "description": "ETH/USD",
+                        "proName": "COINBASE:ETHUSD"
+                    },
+                    {
+                        "description": "BNB/USD",
+                        "proName": "BINANCE:BNBUSD"
+                    },
+                    {
+                        "description": "SHIB/USD",
+                        "proName": "COINBASE:SHIBUSD"
+                    },
+                    {
+                        "description": "Сбер",
+                        "proName": "CAPITALCOM:SBERRU"
+                    },
+                    {
+                        "description": "ВТБ",
+                        "proName": "CAPITALCOM:VTBRRU"
+                    },
+                    {
+                        "description": "Тинькофф",
+                        "proName": "MOEX:TCSG"
+                    },
+                    {
+                        "description": "Сбер привилегированные",
+                        "proName": "CAPITALCOM:SBERPRU"
+                    },
+                    {
+                        "description": "МКБ",
+                        "proName": "CAPITALCOM:CBOMRU"
+                    },
+                    {
+                        "description": "Газпром",
+                        "proName": "CAPITALCOM:GAZPRU"
+                    },
+                    {
+                        "description": "Роснефть",
+                        "proName": "CAPITALCOM:ROSNRU"
+                    },
+                    {
+                        "description": "Новатэк",
+                        "proName": "CAPITALCOM:NVTKRU"
+                    },
+                    {
+                        "description": "Лукойл",
+                        "proName": "CAPITALCOM:LKOHRU"
+                    },
+                    {
+                        "description": "Сургутнефтегаз",
+                        "proName": "CAPITALCOM:SNGSRU"
+                    },
+                    {
+                        "description": "Сургутнефтегаз привилегированные",
+                        "proName": "CAPITALCOM:SNGSPRU"
+                    },
+                    {
+                        "description": "Татнефть",
+                        "proName": "CAPITALCOM:TATNRU"
+                    },
+                    {
+                        "description": "Норникель",
+                        "proName": "CAPITALCOM:GMKNRU"
+                    },
+                    {
+                        "description": "Северсталь",
+                        "proName": "CAPITALCOM:CHMFRU"
+                    },
+                    {
+                        "description": "НЛМК",
+                        "proName": "CAPITALCOM:NLMKRU"
+                    },
+                    {
+                        "description": "ММК",
+                        "proName": "CAPITALCOM:MAGNRU"
+                    },
+                    {
+                        "description": "РусАл",
+                        "proName": "CAPITALCOM:RUALRU"
+                    },
+                    {
+                        "description": "Полиметалл",
+                        "proName": "CAPITALCOM:POLYRU"
+                    },
+                    {
+                        "description": "Алроса",
+                        "proName": "CAPITALCOM:ALRSRU"
+                    },
+                    {
+                        "description": "Полюс Золото",
+                        "proName": "CAPITALCOM:PLZLRU"
+                    },
+                    {
+                        "description": "ФосАгро",
+                        "proName": "CAPITALCOM:PHORRU"
+                    },
+                    {
+                        "description": "Распадская",
+                        "proName": "CAPITALCOM:RASPRU"
+                    },
+                    {
+                        "description": "Мечел",
+                        "proName": "CAPITALCOM:MTLRRU"
+                    },
+                    {
+                        "description": "Мечел привилегированные ",
+                        "proName": "CAPITALCOM:MTLRPRU"
+                    },
+                    {
+                        "description": "ВСМПО-Ависма",
+                        "proName": "CAPITALCOM:VSMORU"
+                    },
+                    {
+                        "description": "Русолово",
+                        "proName": "MOEX:ROLO"
+                    },
+                    {
+                        "description": "Сегежа",
+                        "proName": "MOEX:SGZH"
+                    },
+                    {
+                        "description": "Яндекс",
+                        "proName": "CAPITALCOM:YNDXRU"
+                    },
+                    {
+                        "description": "VK",
+                        "proName": "MOEX:VKCO"
+                    },
+                    {
+                        "description": "ПИК",
+                        "proName": "CAPITALCOM:PIKKRU"
+                    },
+                    {
+                        "description": "Группа ЛСР",
+                        "proName": "CAPITALCOM:LSRGRU"
+                    },
+                    {
+                        "description": "ГК Самолёт",
+                        "proName": "MOEX:SMLT"
+                    },
+                    {
+                        "description": "МТС",
+                        "proName": "CAPITALCOM:MTSSRU"
+                    },
+                    {
+                        "description": "АФК Система",
+                        "proName": "CAPITALCOM:AFKSRU"
+                    },
+                    {
+                        "description": "Ростелеком",
+                        "proName": "CAPITALCOM:RTKMRU"
+                    },
+                    {
+                        "description": "Ростелеком привилегированные ",
+                        "proName": "CAPITALCOM:RTKMPRU"
+                    },
+                    {
+                        "description": "Aэрофлот",
+                        "proName": "CAPITALCOM:AFLTRU"
+                    },
+                    {
+                        "description": "X5 Retail Group",
+                        "proName": "MOEX:FIVE"
+                    },
+                    {
+                        "description": "Магнит",
+                        "proName": "CAPITALCOM:MGNTRU"
+                    },
+                    {
+                        "description": "Детский Мир",
+                        "proName": "CAPITALCOM:DSKYRU"
+                    },
+                    {
+                        "description": "РусАгро",
+                        "proName": "MOEX:AGRO"
+                    },
+                    {
+                        "description": "Лента",
+                        "proName": "MOEX:LENT"
+                    },
+                    {
+                        "description": "М.Видео",
+                        "proName": "CAPITALCOM:MVIDRU"
+                    },
+                    {
+                        "description": "Apple",
+                        "proName": "NASDAQ:AAPL"
+                    },
+                    {
+                        "description": "Microsoft",
+                        "proName": "NASDAQ:MSFT"
+                    },
+                    {
+                        "description": "Google",
+                        "proName": "NASDAQ:GOOGL"
+                    },
+                    {
+                        "description": "Amazon",
+                        "proName": "NASDAQ:AMZN"
+                    },
+                    {
+                        "description": "Tesla",
+                        "proName": "NASDAQ:TSLA"
+                    },
+                    {
+                        "description": "Nvidia",
+                        "proName": "NASDAQ:NVDA"
+                    },
+                    {
+                        "description": "Facebook",
+                        "proName": "NASDAQ:FB"
+                    },
+                    {
+                        "description": "Mastercard",
+                        "proName": "NYSE:MA"
+                    },
+                    {
+                        "description": "Visa",
+                        "proName": "NYSE:V"
+                    },
+                    {
+                        "description": "J.P. Morgan Chase",
+                        "proName": "NYSE:JPM"
+                    },
+                    {
+                        "description": "Citigroup",
+                        "proName": "NYSE:C"
+                    },
+                    {
+                        "description": "Bank of America",
+                        "proName": "NYSE:BAC"
+                    },
+                    {
+                        "description": "Goldman Sachs",
+                        "proName": "NYSE:GS"
+                    },
+                    {
+                        "description": "Morgan Stanley",
+                        "proName": "NYSE:MS"
+                    },
+                    {
+                        "description": "Wells Fargo & Company",
+                        "proName": "NYSE:WFC"
+                    },
+                    {
+                        "description": "The Bank of New York Mellon",
+                        "proName": "NYSE:BK"
+                    },
+                    {
+                        "description": "TAL",
+                        "proName": "NYSE:TAL"
+                    },
+                    {
+                        "description": "Virgin Galactic",
+                        "proName": "NYSE:SPCE"
+                    },
+                    {
+                        "description": "Astra Space",
+                        "proName": "NASDAQ:ASTR"
+                    }
+                ],
+                "showSymbolLogo": true,
+                "colorTheme": "dark",
+                "isTransparent": false,
+                "displayMode": "adaptive",
+                "locale": "ru"
+            }
+        </script>
+    </div>
+    <footer class="footer-distributed">
+        <div class="footer-left">
+            <h3>Информационное Агенство
+                <p></p>
+                <span>Панорама Интеллект</span>
+            </h3>
+            <p class="footer-links">
+                <a href="#" class="link-1">Домой</a>
+                <a target="_blank" href="warning">⚠ Предупреждение ⚠</a>
+                <a target="_blank" href="suggest">Связь</a>
+                <a target="_blank" href="donate">$ Донат $</a>
+                <a href="#">Faq</a>
+            </p>
+            <p class="footer-company-name">ИА "Панорама Интеллект" &copy 2022 All rights reserved</p>
+        </div>
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>ул. Новоцентральная, д. 21/7</span> г. Санкт-Петербург, пос. Лисий Нос</p>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <p></p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a target="_blank" href="mailto:admin@panorama-intellect.me">admin@panorama-intellect.me</a></p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>О нас</span>
+                Информационное агенство "Панорама Интеллект"
+            </p>
+
+            <div class="footer-icons">
+                <a href="https://vk.com/share.php?url={{thispage}}" target="_blank"><i class="fa fa-vk">VK</i></a>
+                <a href="#"><i class="fa fa-twitter">-</i></a>
+                <a href="#"><i class="fa fa-linkedin">-</i></a>
+                <a href="#"><i class="fa fa-github">-</i></a>
+            </div>
+        </div>
+        <div style="color:gray;">
+            <p>Все совпадения случайны. ИА Панорама Интеллект. Права защищены. 1991-2022</p>
+            <p align="right"> <a target="_blank" style="color: #1a20ce; font-weight: 700; font: 'Open Sans'; font-size: 19px; font-style: oblique;" href="warning"> ⚠ Предупреждение ⚠</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+<html>
+
+<head>
+    <title>ИА Панорама Интеллект</title>
+    <link rel="stylesheet" href="{% static 'main/suggest.css' %}">
+    <link rel="icon" href="{% static 'main/images/ia-panorama.png' %}" type="image/png">
+    <link rel="shortcut icon" href="{% static 'main/images/ia-panorama.png' %}" type="image/png">
+</head>
+<header>
+    <a href="main.html" style="margin-right: 65px; " сlass="floating-button"> <img id="fckblsht" src="{% static 'main/images/ia-panorama.png' %}"> </a>
+</header>
+
+<body>
+    <div class="wrapper">
+        <form class="form" method="post">
+            {% csrf_token %}
+            <div class="pageTitle title">Предложить или сообщить об ошибке</div>
+            <div class="secondaryTitle title">Заполните сообщение</div>
+            <textarea name="suggestion" class="message formEntry" placeholder="Предложение"></textarea>
+            <button type="reset" class="clear formEntry">Очистить</button>
+            <button type="submit" class="submit formEntry">Отправить</button>
+        </form>
+    </div>
+</body>
+
+</html>

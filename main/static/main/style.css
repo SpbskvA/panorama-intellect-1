@@ -1,0 +1,557 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+*::-webkit-scrollbar {
+    width: 12px;
+    /* ширина scrollbar */
+}
+*::-moz-scrollbar {
+    width: 12px;
+    /* ширина scrollbar */
+}
+
+*::-webkit-scrollbar-track {
+    background: #7f577e;
+    border-radius: 0px;
+    border-radius: 20px;
+}
+*::-moz-scrollbar-track {
+    background: #7f577e;
+    border-radius: 0px;
+    border-radius: 20px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #2d2f2f;
+    /* цвет плашки */
+    border-radius: 20px;
+    /* закругления плашки */
+    border: 3px solid #57b380;
+    /* padding вокруг плашки */
+}
+*::-moz-scrollbar-thumb {
+    background-color: #2d2f2f;
+    /* цвет плашки */
+    border-radius: 20px;
+    /* закругления плашки */
+    border: 3px solid #57b380;
+    /* padding вокруг плашки */
+}
+
+
+.headerbutton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.headerbutton a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    border: 5px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 19px;
+    letter-spacing: 1px;
+    background-color:#000;
+    height: 55px;
+}
+
+.floating-button{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    margin-right: 65px;
+    height: 0px;
+}
+
+body {
+    background:
+        radial-gradient(black 3px, transparent 4px),
+        radial-gradient(black 3px, transparent 4px),
+        linear-gradient(#ece9e9 3.95px, transparent 0),
+        linear-gradient(45deg, transparent 74px, transparent 75px, blue 75px, green 76px, transparent 77px, transparent 109px),
+        linear-gradient(-45deg, transparent 75px, transparent 76px, red 76px, #a4a4a4 77px, transparent 78px, transparent 109px),
+        #fff;
+    background-size: 109px 109px, 109px 109px, 100% 6px, 109px 109px, 109px 109px;
+    background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+}
+
+span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 180px;
+    height: 55px;
+    margin: 0 15px;
+    perspective: 1000px;
+}
+
+span a {
+    font-size: 19px;
+    letter-spacing: 1px;
+    transform-style: preserve-3d;
+    transform: translateZ(-25px);
+    transition: transform .25s;
+    font-family: 'Montserrat', sans-serif;
+}
+
+span a:before,
+span a:after {
+    position: absolute;
+    content: "Предложить новость";
+    height: 55px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid black;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+span a:before {
+    color: #fff;
+    background: #000;
+    transform: rotateY(0deg) translateZ(25px);
+}
+
+span a:after {
+    color: #000;
+    transform: rotateX(90deg) translateZ(25px);
+}
+
+span a:hover {
+    transform: translateY(30px) rotateX(-90deg);
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* Для старых браузеров */
+    height: 7.5em;
+    /* Высота шапки */
+    background-image: url('images/slide6.png');
+    text-decoration-color: white;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+
+* {
+    font-family: Open Sans;
+}
+
+section {
+    width: 100%;
+    display: inline-block;
+    background-color: lightseagreen:;
+    background-size: 100%;
+    background: #666;
+    height: 2vh;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.footer-distributed {
+    background: #666;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Footer left */
+.footer-distributed .footer-left {
+    width: 40%;
+}
+
+/* The company logo */
+.footer-distributed h3 {
+    color: #ffffff;
+    font: normal 36px 'Open Sans', cursive;
+    margin: 0;
+    display: inline;
+}
+
+.footer-distributed h3 span {
+    display: inline;
+    color: lightseagreen;
+    font: normal 40px 'Open Sans', cursive;
+}
+
+/* Footer links */
+.footer-distributed .footer-links {
+    color: #ffffff;
+    margin: 20px 0 12px;
+    padding: 0;
+}
+
+.footer-distributed .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    font-weight: 400;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+    color: #222;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* Footer Center */
+.footer-distributed .footer-center {
+    width: 35%;
+}
+
+.footer-distributed .footer-center i {
+    background-color: #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    font-weight: 400;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+    color: lightseagreen;
+    text-decoration: none;
+    ;
+}
+
+.footer-distributed .footer-links a:before {
+    content: "|";
+    font-weight: 300;
+    font-size: 20px;
+    left: 0;
+    color: #fff;
+    display: inline-block;
+    padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+    content: none;
+}
+
+/* Footer Right */
+.footer-distributed .footer-right {
+    width: 20%;
+}
+
+.footer-distributed .footer-company-about {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+    display: block;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+    margin-top: 25px;
+}
+
+/* .footer-icons .fa-facebook{
+	background: url(https://res.cloudinary.com/dtmzga3im/image/upload/eimrdqr0iutxk3riilyj);
+} */
+/* a .fa fa-facebook{
+	background: url(https://res.cloudinary.com/dtmzga3im/image/upload/eimrdqr0iutxk3riilyj);
+} */
+.footer-distributed .footer-icons a {
+    display: inline-block;
+    text-decoration: none;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+@media (max-width: 880px) {
+    .footer-distributed {
+        font: bold 14px sans-serif;
+    }
+
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .footer-distributed .footer-center i {
+        margin-left: 0;
+    }
+}
+
+.articles {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+}
+
+.article .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.article .content *{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.article {
+    font-family: 'Open Sans', Arial, sans-serif;
+    float: left;
+    overflow: auto;
+    margin: 20px 1.3%;
+    min-width: 360px;
+    max-width: 360px;
+    min-height: 535px;
+    max-height: 535px;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    color: #000000;
+    /* шрифт */
+    text-align: left;
+    font-size: 16.25px;
+    font-weight: 550;
+    box-shadow: 0 0 16.5px #d2e6e4;
+}
+
+#wrapper {
+    display: table;
+    height: 100%;
+}
+
+#header {
+    height: 300px;
+    background: url(https://abgrealty.com/images/footer-bg.jpg)
+}
+
+#wrapper {
+    width: 100%;
+}
+
+#fckblsht {
+    position: fixed;
+    height: 100px;
+    z-index: 1;
+}
+
+.article * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.article:after {
+    position: absolute;
+    top: 12px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 25px 0 25px 25px;
+    border-color: transparent transparent transparent #d2652d;
+    /* стрелки */
+    content: '';
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.article img {
+    max-width: 100%;
+    vertical-align: top;
+    position: relative;
+}
+
+.article .content {
+    padding: 10px 10px 10px;
+}
+
+.article .date {
+    background-color: #8ab5b0;
+    top: 15px;
+    color: #fff;
+    right: 15px;
+    min-height: 30px;
+    min-width: 48px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+
+.article .date span {
+    display: block;
+    line-height: 14px;
+}
+
+.article .date .month {
+    font-size: 11px;
+}
+
+.article h3,
+.article p {
+    margin: 0;
+    padding: 0;
+}
+
+.article h3 {
+    margin-bottom: 10px;
+    display: inline-block;
+    font-weight: 700;
+}
+
+.article p {
+    font-size: 0.8em;
+    margin-bottom: 20px;
+    font-style: italic;
+    line-height: 1.6em;
+}
+
+.article a {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: 1;
+}
+
+.article:hover:after,
+.article.hover:after {
+    -webkit-transform: translateX(1%);
+    transform: translateX(1%);
+}
+
+.tradingview-widget-container {
+	height: 10% !important;
+	width: 100% !important;
+}
+
+@media (orientation: portrait){
+    header{
+        height: 10em;
+    }
+    .headerbutton a{
+        height: 75px;
+        font-size: 30px;
+    }
+    .floating-button, #fckblsht{
+        display: none;
+    }
+    .article {
+        min-width: auto;
+        max-width: none;
+        min-height: auto;
+        max-height: none;
+        width: 100%;
+        height: auto;
+        font-size: 35px;
+				margin: 0px;
+    }
+    .article .date{
+        font-size: 30px;
+    }
+    .articles{
+        flex-direction: column;
+    }
+}
+@media (prefers-color-scheme: dark) {
+	.article {
+	    background-color: #000000;
+	    color: #ffffff;
+	}
+	.tradingview-widget-container {
+		background-color: black;
+	}
+	body {
+	    background:
+	        radial-gradient(black 3px, transparent 4px),
+	        radial-gradient(black 3px, transparent 4px),
+	        linear-gradient(black 3.95px, transparent 0),
+	        linear-gradient(45deg, transparent 74px, transparent 75px, blue 75px, green 76px, transparent 77px, transparent 109px),
+	        linear-gradient(-45deg, transparent 75px, transparent 76px, red 76px, black 77px, transparent 78px, transparent 109px),
+	        black;
+	    background-size: 109px 109px, 109px 109px, 100% 6px, 109px 109px, 109px 109px;
+	    background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+	}
+	*::-webkit-scrollbar-track {
+	    background: #2d4143;
+	    /* цвет дорожки */
+	    border-radius: 20px;
+	}
+    *::-moz-scrollbar-track {
+	    background: #2d4143;
+	    /* цвет дорожки */
+	    border-radius: 20px;
+	}
+}

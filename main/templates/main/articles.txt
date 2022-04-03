@@ -1,0 +1,315 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+<html>
+<head>
+  <title>ИА Панорама Интеллект</title>
+  <link rel="stylesheet" href="{% static 'main/style.css' %}">
+  <link rel="icon" href="{% static 'main/images/ia-panorama.png' %}" type="image/png">
+  <link rel="shortcut icon" href="{% static 'main/images/ia-panorama.png' %}" type="image/png">
+</head>
+<header>
+  <div style="color:gray">Все совпадения случайны. ИА Панорама Интеллект. Права защищены. 1991-2022</div><a style="margin-right: 65px; margin-top: -30px;" сlass="floating-button"> <img id="fckblsht"
+      src="https://sun9-8.userapi.com/impg/mBonLLhh4Gk3oj0rtLzAnsOxItBVHdjA0NK-pQ/GbIgN6Weo5c.jpg?size=1015x871&quality=96&sign=bfafb18b9491fa162e2596a6de99292d&type=album"> </a>
+</header>
+<figure class="baha1493">
+  <figcaption>
+    <div class="image"><img src="https://sun9-20.userapi.com/impg/YlLUugx77_H2oz4dGncgLxPZidonxqW49StV5A/gKxdNI6kS0w.jpg?size=400x165&quality=96&sign=c41738f7fee6891f1d2946c87e6e313d&type=album" alt="ls-sample1" /></div>
+    <div class="date"><span class="day">10</span><span class="month">Feb</span></div>
+    <p></p>
+    <h3>Программы центра Интеллект</h3>
+    <p>
+      Директор ГБУ ДО Центр "Интеллект" заявил, в связи с большим количеством желающих попасть на программы, приоритетный порядок отбора будет приходиться на коллектив ИА "Панорама Интеллект".
+			Это было прокомментировано следующим образом: "Ну там и так норм челы, зачем лучше искать?". В свою очередь наше агенство радо, что Центр начал принимать правильные решения.
+			Коммитет по образованию так же положительно оценил это решение. В добавок, "Интеллектом" была предложена программа "БВИ" по игре в покер, нарды или теннис. О дальшейших
+			подробностях сообщится позже.
+
+    </p>
+    <footer>
+    </footer>
+  </figcaption>
+</figure>
+<figure class="baha1493">
+  <figcaption>
+    <div class="image"><img src="https://s10020.edu35.ru/images/%D0%95%D0%A1/%D0%9F%D0%92/poster_event_1534783.jpg" alt="ls-sample1" /></div>
+    <div class="date"><span class="day">10</span><span class="month">Feb</span></div>
+    <p></p>
+    <h3>Майская проектная программа по математике</h3>
+    <p>
+      Наша редакция собирает коммисию по рассмотрению решения о поступлении до 27 февраля. При положительном вердикте программа будет "захвачена" заявками и отбор будет проходить только среди нашего коллектива.
+      Елена Владимировна положительно прокомментировала наше решение: "Чё за ННы вообще? Кто это? Узнаю". О дальшейших новостях известим позже.
+    </p>
+    <footer>
+    </footer>
+  </figcaption>
+</figure>
+<figure class="baha1493">
+  <figcaption>
+    <div class="image"><img src="https://i.ytimg.com/vi/ib4brmkG6Go/maxresdefault.jpg" alt="ls-sample1" /></div>
+    <div class="date"><span class="day">09</span><span class="month">Feb</span></div>
+    <p></p>
+    <h3>Результаты регионального этапа ВсОШ по математике</h3>
+    <p>
+      Главный жюри областного этапа ВсОШ по математике передал победу следующему по списку за плохое поведение.
+      Мы предполагаем, что это было сделано из-за отсутвия у участника телефона от марки Huawei. Олимпиадный отдел прокомментировал это плохим
+      поведением: "Вы плохо себя вели! Вы все двоечники! Уйдите из кабинета" - цитата. Наша редакция готовит коллективный иск.
+    </p>
+    <footer>
+    </footer>
+  </figcaption>
+</figure>
+<figure class="baha1493">
+  <figcaption>
+    <div class="image"><img
+        src="https://gimn-bv.odinedu.ru/school_life/%D0%92%D1%81%D0%B5%D1%80%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%B0%D1%8F%20%D0%BE%D0%BB%D0%B8%D0%BC%D0%BF%D0%B8%D0%B0%D0%B4%D0%B0%20%D1%88%D0%BA%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2/vsosh.png"
+        alt="ls-sample1" /></div>
+    <div class="date"><span class="day">09</span><span class="month">Feb</span></div>
+    <p></p>
+    <h3>Результаты регионального этапа ВсОШ по математике</h3>
+    <p>
+      Олимпиадный отдел принуждённо вышел с каникул и вспомнил результаты работ участников.
+      Поставновлением областного комитета образования были выложены сегодняшние результаты и госс. тайна стала рассекречена.
+      Ленинградская область пишет
+      всероссийский этап в штатном порядке.
+
+    </p>
+    <footer>
+    </footer>
+  </figcaption>
+</figure>
+<figure class="baha1493">
+  <div class="image"><img src="https://ekspertizy.org/images/uploads/1ef170f63c6e678f3bf1184b8c5738fa.jpg" alt="ls-sample1" /></div>
+  <figcaption>
+    <div class="date"><span class="day">08</span><span class="month">Feb</span></div>
+    <h3>Иск</h3>
+    <p>
+      Арбитранжый суд по Ленинградской области и г. Санкт-Петербургу рассмотрел иск от коллектива Pus9vGang. Иск считается принятым и в стадии выполнения. Результаты должны появится завтра и в качестве компенсации каждому из коллектива полагается 400
+      граммов пельменей и +1 балл за решение через производные. Суд по правам человека положительно оценил действия арбитражного суда. Олимпиадный отдел от комментариев отказался.
+      </footer>
+
+  </figcaption>
+</figure>
+<figure class="baha1493">
+  <div class="image"><img src="https://tomsk-time.ru/uploads/posts/2020-02/1580724876_1580724894.png" alt="ls-sample1" /></div>
+  <figcaption>
+    <div class="date"><span class="day">08</span><span class="month">Feb</span></div>
+    <h3>Коронавирус</h3>
+    <p>
+      Работу Артёма Хацкевича подозревают в заражении коронавирусом главного жюри регионального этапа ВсОШ по математике.
+      Стороны договорились о ликвидации работы путём сжигания и прессовки. Результаты будут анулированы. Комитет по образованию подал
+      иск в суд на умышленное причинение тяжкого вреда здоровью. Участник вину отрицает и готовит апелляцию.
+
+    </p>
+    <footer>
+      <div class="views"><i class="ion-eye"></i>2,907</div>
+      <div class="love"><i class="ion-heart"></i>623</div>
+      <div class="comments"><i class="ion-chatboxes"></i>23</div>
+    </footer>
+
+  </figcaption>
+</figure>
+<figure class="baha1493">
+  <figcaption>
+    <div class="image"><img
+        src="https://gimn-bv.odinedu.ru/school_life/%D0%92%D1%81%D0%B5%D1%80%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%B0%D1%8F%20%D0%BE%D0%BB%D0%B8%D0%BC%D0%BF%D0%B8%D0%B0%D0%B4%D0%B0%20%D1%88%D0%BA%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2/vsosh.png"
+        alt="ls-sample1" /></div>
+    <div class="date"><span class="day">07</span><span class="month">Feb</span></div>
+    <p></p>
+    <h3>Результаты регионального этапа ВсОШ по математике.</h3>
+    <p>
+      Олимпиадный отдел ушёл в отпуск на год по постановлению областного комитета образования. "Какие результаты? Я в запой!" - прокомментировал сотрудник последнюю задачу Артёма. Участники из Ленинградской области узнают результаты в следующем году,
+      из-за этого был перенесён всероссийский этап ВсОШ. Pus9vGang готовит коллективный иск. Проверяющие от комментариев воздержались.
+    </p>
+    <footer>
+    </footer>
+
+  </figcaption>
+</figure>
+<figure class="baha1493">
+  <div class="image"><img src="https://avatars.mds.yandex.net/get-zen_doc/3396902/pub_5eb2e33e931b1f7814a04009_5eb2e41a931b1f7814a0401a/scale_1200" alt="ls-sample1" /></div>
+  <figcaption>
+    <div class="date"><span class="day">06</span><span class="month">Feb</span></div>
+    <h3>Результаты регионального этапа ВсОШ по математике</h3>
+    <p>
+      Члены жюри забыли результаты участников, сославшись на государственную тайну.
+      Комитет образования вопросов не имеет.
+    </p>
+    <footer>
+      <div class="views"><i class="ion-eye"></i>2,907</div>
+      <div class="love"><i class="ion-heart"></i>623</div>
+      <div class="comments"><i class="ion-chatboxes"></i>23</div>
+    </footer>
+
+  </figcaption>
+</figure>
+<figure class="baha1493">
+  <div class="image"><img src="https://primelog.ru/upload/medialibrary/725/725c093b5af4c476c31f6606ec17b2b1.jpg" alt="ls-sample1" /></div>
+  <figcaption>
+    <div class="date"><span class="day">06</span><span class="month">Feb</span></div>
+    <h3>Подарки от Huawei</h3>
+    <p>
+      Победителям регионального этапа ВсОШ по математике, полагается новый Huawei. Если в случае победы в олимпиаде у участника обнаружится телефон другой компании, то победа перейдёт следующему по списку.
+    </p>
+    <footer>
+      <div class="views"><i class="ion-eye"></i>2,907</div>
+      <div class="love"><i class="ion-heart"></i>623</div>
+      <div class="comments"><i class="ion-chatboxes"></i>23</div>
+    </footer>
+
+  </figcaption>
+</figure>
+<figure class="baha1493">
+  <div class="image"><img src="https://miasin.by/wp-content/uploads/2016/08/nardy3-1.jpg" alt="ls-sample1" /></div>
+  <figcaption>
+    <div class="date"><span class="day">06</span><span class="month">Feb</span></div>
+    <h3>Баллы за олимпиаду</h3>
+    <p>
+      Одному из участников олимпиады регионального этапа ВсОШ по математике умножили баллы на два. Учащийся прокомментировал это удачной игрой в нарды. После этого случая Центр Интеллект открыл сессию по нардам для 9-11 классов и мегафакультет
+      прикладной теории вероятности.
+    </p>
+    <footer>
+      <div class="views"><i class="ion-eye"></i>2,907</div>
+      <div class="love"><i class="ion-heart"></i>623</div>
+      <div class="comments"><i class="ion-chatboxes"></i>23</div>
+    </footer>
+
+  </figcaption>
+</figure>
+
+<figure class="baha1493">
+  <div class="image"><img src="https://i.ytimg.com/vi/__OzY5Yu_qY/maxresdefault.jpg" alt="ls-sample1" /></div>
+  <figcaption>
+    <div class="date"><span class="day">05</span><span class="month">Feb</span></div>
+    <h3>Бюджет Интеллекта</h3>
+    <p>
+      После проигрыша игры киберспортивной команды Natus Svincer в компьютерной игре CS:GO, Рочев сделал сокращение рабочих мест и заработных плат. Денис Игоревич комментировать происходящее отказался.
+    </p>
+    <footer>
+      <div class="views"><i class="ion-eye"></i>2,907</div>
+      <div class="love"><i class="ion-heart"></i>623</div>
+      <div class="comments"><i class="ion-chatboxes"></i>23</div>
+    </footer>
+
+  </figcaption>
+</figure>
+<figure class="baha1493">
+  <div class="image"><img src="https://avatars.mds.yandex.net/get-zen_doc/1581470/pub_5f435f50d222d840991084a7_5f435f5daee5d15985520e98/scale_1200" alt="ls-sample2" /></div>
+  <figcaption>
+    <div class="date"><span class="day">05</span><span class="month">Feb</span></div>
+    <h3>Сжигание работ на регионе по математике</h3>
+    <p>
+      Работу одного из участников региона сожгли, чтобы поддержать тепло в холодную погоду. Организаторы олимпиады действовали в сответсвии с прававыми нормами. Комитет образования отреагировал на это действие положительно.
+    </p>
+    <footer>
+      <div class="views"><i class="ion-eye"></i>2,907</div>
+      <div class="love"><i class="ion-heart"></i>623</div>
+      <div class="comments"><i class="ion-chatboxes"></i>23</div>
+    </footer>
+  </figcaption>
+  <a href="#"></a>
+</figure>
+<figure class="baha1493 hover">
+  <div class="image"><img src="https://sun9-76.userapi.com/impg/VS6V3nRtomHX_0drnzd3msX5LXo7SnmaBaQfxQ/HZQ8EeZeV6g.jpg?size=604x340&quality=96&sign=4a29129dd5dfb395d0a81b54d92cae8d&type=album" alt="ls-sample2" /></div>
+  <figcaption>
+    <div class="date"><span class="day">04</span><span class="month">Feb</span></div>
+    <h3>Участник регионального этапа угражает члену жюри</h3>
+    <p>
+      Участник Эйлера из 8 класса угрожал члену жюри регионального этапа поездкой в Мурино. Стороны договорились о подписании контракта на сжигание 10 листов бумаги.
+    </p>
+    <footer>
+      <div class="views"><i class="ion-eye"></i>1,870</div>
+      <div class="love"><i class="ion-heart"></i>973</div>
+      <div class="comments"><i class="ion-chatboxes"></i>85</div>
+    </footer>
+  </figcaption>
+  <a href="#"></a>
+</figure>
+<figure class="baha1493 hover">
+  <div class="image"><img src="https://sun9-74.userapi.com/impg/9B8W3U96vP4yAMKCJOSns7LgTMlfFZ54lQvWyg/efN-FKz7oEM.jpg?size=1920x1080&quality=96&sign=ba9ddda1976869ef4eceb59d2c2b15ad&type=album" alt="ls-sample2" /></div>
+  <figcaption>
+    <div class="date"><span class="day">04</span><span class="month">Feb</span></div>
+    <h3>Теннис в Интеллекте</h3>
+    <p>
+      В Интеллекте сломался теннисный стол. Центр Интеллект подозревают Pus9vGang. Другая сторона, передав номер главного адвоката, прокомментировало происходящее внезапным кручёным ударом от Саши Малышева.
+    </p>
+    <footer>
+      <div class="views"><i class="ion-eye"></i>1,870</div>
+      <div class="love"><i class="ion-heart"></i>973</div>
+      <div class="comments"><i class="ion-chatboxes"></i>85</div>
+    </footer>
+  </figcaption>
+  <a href="#"></a>
+</figure>
+<figure class="baha1493">
+  <figcaption>
+    <div class="image"><img src="https://sun9-74.userapi.com/impg/9B8W3U96vP4yAMKCJOSns7LgTMlfFZ54lQvWyg/efN-FKz7oEM.jpg?size=1920x1080&quality=96&sign=ba9ddda1976869ef4eceb59d2c2b15ad&type=album" alt="ls-sample2" /></div>
+    <div class="date"><span class="day">02</span><span class="month">Feb</span></div>
+    <p> </p>
+    <h3>Регион по физике</h3>
+    <p>
+      Pus9vGang: 6 Призёров
+    </p>
+    <footer>
+      <div class="views"><i class="ion-eye"></i>928</div>
+      <div class="love"><i class="ion-heart"></i>198</div>
+      <div class="comments"><i class="ion-chatboxes"></i>23</div>
+    </footer>
+  </figcaption>
+  <a href="#"></a>
+</figure>
+<figure class="baha1493">
+  <figcaption>
+    <div class="image"><img src="http://news.rusoil.net/files/news/2019/2019_01/2019_01_24_%D0%A4%D0%B8%D0%B7%D0%B8%D0%BA%D0%B0%20%D0%BE%D0%BB%D0%B8%D0%BC%D0%BF/STAR1000.jpg" alt="ls-sample2" /></div>
+    <div class="date"><span class="day">01</span><span class="month">Feb</span></div>
+    <p> </p>
+    <h3>Проверка работ на региональном этапе ВсОШ по физике</h3>
+
+    <p>
+      После получения результатов. Коллектив Pus9vGang усомнился в их коректности и подал коллективный иск. Олимпиадный отдел подал в отставку. Проверяющее комментировать происходящее отказались.
+    </p>
+    <footer>
+      <div class="views"><i class="ion-eye"></i>928</div>
+      <div class="love"><i class="ion-heart"></i>198</div>
+      <div class="comments"><i class="ion-chatboxes"></i>23</div>
+    </footer>
+  </figcaption>
+  <a href="#"></a>
+</figure>
+
+</figure>
+<figure class="baha1493 hover">
+  <figcaption>
+    <div class="image"><img src="https://sun9-72.userapi.com/impg/GbbBcphFzeFIQwFWaYDcuD07wHmVPNJsOZcKeQ/mJdotiszL_M.jpg?size=1600x1200&quality=96&sign=cec330f5c58d378b982a23eeb1fa5b9e&type=album" alt="ls-sample2" /></div>
+    <p></p>
+    <h3>Выдача дипломов на сессии по Информатике</h3>
+    <div class="date"><span class="day">30</span><span class="month">Jan</span></div>
+
+    <p>
+      Участникам сессии «Алгоритмы и структуры данных» сдавшие зачёт ниже порога выдали дипломы ПХ.
+      Организаторы сессии расшифровали как Похвала.
+       Но у комитета образования возникли вопросы. Что действительно это означает остаётся только догадываться.
+
+    </p>
+    <footer>
+      <div class="views"><i class="ion-eye"></i>1,870</div>
+      <div class="love"><i class="ion-heart"></i>973</div>
+      <div class="comments"><i class="ion-chatboxes"></i>85</div>
+    </footer>
+  </figcaption>
+  <a href="#"></a>
+</figure>
+
+	<body>
+<div id="wrapper">
+<div id="header">
+	Все без исключения приведённые на сайте panorama-intellect.me материалы являются сатирой и выдумкой.
+Любые совпадения текстов panorama-intellect.me  с реальными личностями и событиями не преследуют
+цели задеть чью-либо честь или достоинство или нанести урон деловой репутации, поскольку все
+материалы ресурса panorama-intellect.me  создаются как сатирические фельетоны.
+</div>
+</div>
+
+
+</body>
+
+</html>

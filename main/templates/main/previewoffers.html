@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+<html>
+
+<head>
+    <title>ИА Панорама Интеллект</title>
+    <link rel="stylesheet" href="{% static 'main/style.css' %}">
+    <link rel="icon" href="{% static 'main/images/ia-panorama.png' %}" type="image/png">
+    <link rel="shortcut icon" href="{% static 'main/images/ia-panorama.png' %}" type="image/png">
+    <script type="text/javascript" src="https://vk.com/js/api/share.js?93" charset="windows-1251"></script>
+</head>
+<a href="#" сlass="floating-button"> <img id="fckblsht" src="{% static 'main/images/ia-panorama.png' %}"> </a>
+<header>
+    <div class="headerbutton"><a target="_blank" href="offer">Предложить новость</a></div>
+    <div class="headerbutton"><a target="_blank" href="https://t.me/PanoramaIntellectBot">Подписаться на рассылку</a></div>
+</header>
+
+<body>
+    <div class="articles">
+        {%for article in articles%}
+        <figure class="article">
+            <div class="content">
+                <img class="image" src="{{ article.image }}" alt="ls-sample1" />
+                <div class="date">{{ article.date }}</div>
+                <p></p>
+                <h3>{{ article.name }}</h3>
+                <p>
+                    {{ article.info|safe }}
+                </p>
+            </div>
+        </figure>
+        {% endfor %}
+    </div>
+    
+</body>
+
+</html>
