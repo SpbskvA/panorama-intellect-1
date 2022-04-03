@@ -8,7 +8,7 @@ class ArticleAdmin(admin.ModelAdmin):
     list_display = ('name','htmlimage','date')
     list_display_links = ('name','htmlimage',)
     fields = ('name', 'info', 'image', 'date', 'htmlimage')
-    readonly_fields = ('date','htmlimage')
+    readonly_fields = ('htmlimage',)
 
     def htmlimage(self, object):
         return mark_safe(f'<img src = "{object.image}" style = "height: 50px;">')

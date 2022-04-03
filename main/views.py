@@ -58,8 +58,8 @@ def plg():
 
 
 def newspage(request):
-    if request.scheme == 'http' and request.META['HTTP_HOST'] != 'localhost:8000' and request.META['HTTP_HOST'] != '127.0.0.1:8000':
-        return redirect('https://{}'.format(request.META['HTTP_HOST']))
+    #if request.scheme == 'http' and request.META['HTTP_HOST'] != 'localhost:8000' and request.META['HTTP_HOST'] != '127.0.0.1:8000':
+    #    return redirect('https://{}'.format(request.META['HTTP_HOST']))
     global polling
     if not polling:
         try:

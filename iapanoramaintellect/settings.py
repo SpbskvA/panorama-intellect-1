@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-&3k9+e19!y&0@r(3xq#o1#=@a8t4s+xafh0b33q1dcig_du&km'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'main'
+    'main.apps.MainConfig',
 ]
 
 MIDDLEWARE = [
@@ -78,25 +78,19 @@ WSGI_APPLICATION = 'iapanoramaintellect.wsgi.application'
 #postgres://zynzcsjoammuwy:bdd207aba461f7c3309fa62506a37d873cf994e642da4e7a2557f5815fad6246@ec2-54-247-96-153.eu-west-1.compute.amazonaws.com:5432/d8f80f28tequok
 DATABASES = {
     #local database
-    # 'default': {
-    #     'ENGINE': 'django.db.backends.sqlite3',
-    #     'NAME': BASE_DIR / 'db.sqlite3',
-    # }
-    #Heroku Database
     'default': {
-
-        'ENGINE': 'django.db.backends.postgresql',
-
-        'NAME': 'd8f80f28tequok',
-
-        'HOST': 'ec2-54-247-96-153.eu-west-1.compute.amazonaws.com',
-
-        'PORT': 5432,
-
-        'USER': 'zynzcsjoammuwy',
-
-        'PASSWORD': 'bdd207aba461f7c3309fa62506a37d873cf994e642da4e7a2557f5815fad6246',
-     }
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+    #Heroku Database
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.postgresql',
+    #     'NAME': 'd8f80f28tequok',
+    #     'HOST': 'ec2-54-247-96-153.eu-west-1.compute.amazonaws.com',
+    #     'PORT': 5432,
+    #     'USER': 'zynzcsjoammuwy',
+    #     'PASSWORD': 'bdd207aba461f7c3309fa62506a37d873cf994e642da4e7a2557f5815fad6246',
+    #  }
 }
 
 
@@ -137,7 +131,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = BASE_DIR / "staticfiles"
+STATIC_ROOT = BASE_DIR / "static/"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
