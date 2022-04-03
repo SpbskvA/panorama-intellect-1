@@ -78,19 +78,19 @@ WSGI_APPLICATION = 'iapanoramaintellect.wsgi.application'
 #postgres://zynzcsjoammuwy:bdd207aba461f7c3309fa62506a37d873cf994e642da4e7a2557f5815fad6246@ec2-54-247-96-153.eu-west-1.compute.amazonaws.com:5432/d8f80f28tequok
 DATABASES = {
     #local database
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-    #Heroku Database
     # 'default': {
-    #     'ENGINE': 'django.db.backends.postgresql',
-    #     'NAME': 'd8f80f28tequok',
-    #     'HOST': 'ec2-54-247-96-153.eu-west-1.compute.amazonaws.com',
-    #     'PORT': 5432,
-    #     'USER': 'zynzcsjoammuwy',
-    #     'PASSWORD': 'bdd207aba461f7c3309fa62506a37d873cf994e642da4e7a2557f5815fad6246',
-    #  }
+    #     'ENGINE': 'django.db.backends.sqlite3',
+    #     'NAME': BASE_DIR / 'db.sqlite3',
+    # }
+    #TimeWeb Database
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'default_db',
+        'HOST': '5.23.55.114',
+        'PORT': 5432,
+        'USER': 'gen_user',
+        'PASSWORD': 'KoTAdMiN',
+     }
 }
 
 
