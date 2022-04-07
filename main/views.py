@@ -6,7 +6,10 @@ from .forms import ArticleOffer
 import telebot as tb
 from telebot import types
 import threading as td
-bot = tb.TeleBot('5144005351:AAF17je1fLUroxiFt_PAPyuwo9cE01UQq1o')
+from django.conf import settings
+from requests import get
+from random import randint
+bot = tb.TeleBot(settings.TELEGRAM_KEY)
 
 @bot.message_handler(commands=["start"])
 def start(message):
@@ -47,15 +50,18 @@ def handler(message):
         else:
             bot.send_message(message.chat.id, "Ты и не был подписан🙃", reply_markup = submk)
     else:
-        if Subscriber.objects.filter(tgid = str(message.chat.id)).exists():
-            bot.send_message(message.chat.id, message.text, reply_markup = unsubmk)
-        else:
-            bot.send_message(message.chat.id, message.text, reply_markup = submk)
-polling = False
+        try:
+            source = get("https://aws.random.cat/view/{}".format(randint(1,1000))).text
+            if Subscriber.objects.filter(tgid = str(message.chat.id)).exists():
+                bot.send_photo(message.chat.id, source.split("src=\"")[1].split("\"")[0], '', reply_markup = unsubmk)
+            else:
+                bot.send_photo(message.chat.id, source.split("src=\"")[1].split("\"")[0], '', reply_markup = submk)
+        except Exception as ex:
+            print(ex)
 
+polling = False
 def plg():
     bot.polling(none_stop=True, interval=0)
-
 
 def newspage(request):
     #if request.scheme == 'http' and request.META['HTTP_HOST'] != 'localhost:8000' and request.META['HTTP_HOST'] != '127.0.0.1:8000':

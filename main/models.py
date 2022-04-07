@@ -1,7 +1,7 @@
 from django.db.models import *
-
 import telebot as tb
-bot = tb.TeleBot('5144005351:AAF17je1fLUroxiFt_PAPyuwo9cE01UQq1o')
+from django.conf import settings
+bot = tb.TeleBot(settings.TELEGRAM_KEY)
 
 class Suggestion(Model):
     message = TextField(verbose_name = "Предложение")
