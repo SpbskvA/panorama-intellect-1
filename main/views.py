@@ -11,6 +11,15 @@ from requests import get
 from random import randint
 bot = tb.TeleBot(settings.TELEGRAM_KEY)
 
+def getcat(deep):
+    if deep > 10:
+        return "https://forum.exbo.ru/assets/files/2021-02-09/1612862122-945296-hf-qs6u00hw.jpeg"
+    source = get("https://aws.random.cat/view/{}".format(randint(1,1000))).text
+    if "id=\"cat" in source:
+        return source.split("src=\"")[1].split("\"")[0]
+    else:
+        return getcat(deep+1)
+
 @bot.message_handler(commands=["start"])
 def start(message):
     markup=types.ReplyKeyboardMarkup(resize_keyboard=True)
@@ -53,9 +62,9 @@ def handler(message):
         try:
             source = get("https://aws.random.cat/view/{}".format(randint(1,1000))).text
             if Subscriber.objects.filter(tgid = str(message.chat.id)).exists():
-                bot.send_photo(message.chat.id, source.split("src=\"")[1].split("\"")[0], '', reply_markup = unsubmk)
+                bot.send_photo(message.chat.id, getcat(), '', reply_markup = unsubmk)
             else:
-                bot.send_photo(message.chat.id, source.split("src=\"")[1].split("\"")[0], '', reply_markup = submk)
+                bot.send_photo(message.chat.id, getcat(), '', reply_markup = submk)
         except Exception as ex:
             print(ex)
 
