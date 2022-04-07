@@ -62,9 +62,9 @@ def handler(message):
         try:
             source = get("https://aws.random.cat/view/{}".format(randint(1,1000))).text
             if Subscriber.objects.filter(tgid = str(message.chat.id)).exists():
-                bot.send_photo(message.chat.id, getcat(), '', reply_markup = unsubmk)
+                bot.send_photo(message.chat.id, getcat(0), '', reply_markup = unsubmk)
             else:
-                bot.send_photo(message.chat.id, getcat(), '', reply_markup = submk)
+                bot.send_photo(message.chat.id, getcat(0), '', reply_markup = submk)
         except Exception as ex:
             print(ex)
 
