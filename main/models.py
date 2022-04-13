@@ -30,10 +30,14 @@ class Article(Model):
 
     def save(self, *args, **kwargs):
         if not Article.objects.filter(id = self.id).exists():
-            if settings.ENABLE_NOTIFICATIONS:
-                for user in Subscriber.objects.all():
-                    bot.send_photo(int(user.tgid), self.image, 'На сайте "Панорама Интеллект" вышел новый пост😎:\n"{}"\nПодробнее -> https://panorama-intellect.me/'.format(self.name))
-        super().save(*args, **kwargs)
+            try:
+                super().save(*args, **kwargs)
+            except Exception as ex:
+                print(f"### CANNOT SAVE THE ARTICLE <EXCEPTION>:<{ex}> ###")
+            else:
+                if settings.ENABLE_NOTIFICATIONS:
+                    for user in Subscriber.objects.all():
+                        bot.send_photo(int(user.tgid), self.image, 'На сайте "Панорама Интеллект" вышел новый пост😎:\n"{}"\nПодробнее -> https://panorama-intellect.me/'.format(self.name))
 
     class Meta:
         ordering = ["-date","-id"]
