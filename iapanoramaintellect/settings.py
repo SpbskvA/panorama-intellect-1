@@ -15,12 +15,15 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-#prod key
-#@PanoramaIntellectBot
-TELEGRAM_KEY = '5144005351:AAF17je1fLUroxiFt_PAPyuwo9cE01UQq1o'
-#test key
-#@testbotpanoramaintellect_bot
-# TELEGRAM_KEY = '5148258789:AAFY_W1njSITfU5WPtnEVRS3C75nxn91Pc4'
+#TELEGRAM BOT SETTINGS
+ENABLE_NOTIFICATIONS = True
+TELEGRAM_KEYS = {
+    #@testbotpanoramaintellect_bot
+    'test' : '5148258789:AAFY_W1njSITfU5WPtnEVRS3C75nxn91Pc4',
+    #@PanoramaIntellectBot
+    'prod' : '5144005351:AAF17je1fLUroxiFt_PAPyuwo9cE01UQq1o'
+}
+TELEGRAM_KEY = TELEGRAM_KEYS['prod']
 
 
 # Quick-start development settings - unsuitable for production

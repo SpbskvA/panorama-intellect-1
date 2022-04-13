@@ -110,6 +110,19 @@ def previewoffers(request):
     else:
         return HttpResponseRedirect('/main.html')
 
+def onoffnotify(request):
+    if request.user.is_staff:
+        if request.method == "GET" and request.GET.get('status'):
+            if request.GET['status'] == '1':
+                settings.ENABLE_NOTIFICATIONS = True
+                print("### TELEGRAM NOTIFICATIONS ENABLED ###")
+            elif request.GET['status'] == '0':
+                settings.ENABLE_NOTIFICATIONS = False
+                print("### TELEGRAM NOTIFICATIONS DISABLED ###")
+        return render(request, 'main/onoffnotify.html', {'status' : settings.ENABLE_NOTIFICATIONS})
+    else:
+        return HttpResponseRedirect('/main.html')
+
 def warning(request):
 	return render(request, 'main/warning.html')
 

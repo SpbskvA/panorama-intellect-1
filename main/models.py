@@ -30,8 +30,9 @@ class Article(Model):
 
     def save(self, *args, **kwargs):
         if not Article.objects.filter(id = self.id).exists():
-            for user in Subscriber.objects.all():
-                bot.send_photo(int(user.tgid), self.image, 'На сайте "Панорама Интеллект" вышел новый пост😎:\n"{}"\nПодробнее -> https://panorama-intellect.me/'.format(self.name))
+            if settings.ENABLE_NOTIFICATIONS:
+                for user in Subscriber.objects.all():
+                    bot.send_photo(int(user.tgid), self.image, 'На сайте "Панорама Интеллект" вышел новый пост😎:\n"{}"\nПодробнее -> https://panorama-intellect.me/'.format(self.name))
         super().save(*args, **kwargs)
 
     class Meta:

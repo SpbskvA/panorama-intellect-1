@@ -1,0 +1,121 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Переключение уведомлений</title>
+    <link rel = "stylesheet" href="{% static 'main/onoffstyle.css' %}">
+</head>
+
+<body>
+    <div class="container">
+        {%if status%}
+        <a href="{%url 'onoffnotify'%}?status=0">
+            <div class="container">
+                <div class="btn">
+                    <div class="shop-now">Enable</div>
+                    <div class="snowflake-grid to-left">
+                        <div class="snowflake-item border-bottom border-right">
+                            <div class="sub-items border-right border-bottom pull-down">
+                                <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                            </div>
+                        </div>
+                        <div class="snowflake-item border-bottom border-left">
+                            <div class="sub-items border-right border-bottom r-90 pull-down-right">
+                                <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                            </div>
+                        </div>
+                        <div class="snowflake-item border-top border-right">
+                            <div class="sub-items border-right border-bottom r-270 pull-right">
+                                <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                            </div>
+                        </div>
+                        <div class="snowflake-item border-top border-left">
+                            <div class="sub-items border-right border-bottom r-180 pull-left">
+                                <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="snowflake-grid to-right">
+                        <div class="snowflake-item border-bottom border-right">
+                            <div class="sub-items border-right border-bottom pull-down">
+                                <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                            </div>
+                        </div>
+                        <div class="snowflake-item border-bottom border-left">
+                            <div class="sub-items border-right border-bottom r-90 pull-down-right">
+                                <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                            </div>
+                        </div>
+                        <div class="snowflake-item border-top border-right">
+                            <div class="sub-items border-right border-bottom r-270 pull-right">
+                                <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                            </div>
+                        </div>
+                        <div class="snowflake-item border-top border-left">
+                            <div class="sub-items border-right border-bottom r-180 pull-left">
+                                <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+        {% else %}
+        <a href="{%url 'onoffnotify'%}?status=1">
+            <div class="container">
+                <div class="btn">
+                    <div class="shop-now">Disable</div>
+                    <div class="snowflake-grid to-left">
+                        <div class="snowflake-item border-bottom border-right">
+                            <div class="sub-items border-right border-bottom pull-down">
+                                <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                            </div>
+                        </div>
+                        <div class="snowflake-item border-bottom border-left">
+                            <div class="sub-items border-right border-bottom r-90 pull-down-right">
+                                <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                            </div>
+                        </div>
+                        <div class="snowflake-item border-top border-right">
+                            <div class="sub-items border-right border-bottom r-270 pull-right">
+                                <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                            </div>
+                        </div>
+                        <div class="snowflake-item border-top border-left">
+                            <div class="sub-items border-right border-bottom r-180 pull-left">
+                                <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="snowflake-grid to-right">
+                        <div class="snowflake-item border-bottom border-right">
+                            <div class="sub-items border-right border-bottom pull-down">
+                                <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                            </div>
+                        </div>
+                        <div class="snowflake-item border-bottom border-left">
+                            <div class="sub-items border-right border-bottom r-90 pull-down-right">
+                                <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                            </div>
+                        </div>
+                        <div class="snowflake-item border-top border-right">
+                            <div class="sub-items border-right border-bottom r-270 pull-right">
+                                <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                            </div>
+                        </div>
+                        <div class="snowflake-item border-top border-left">
+                            <div class="sub-items border-right border-bottom r-180 pull-left">
+                                <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+        {% endif %}
+    </div>
+</body>
+
+</html>

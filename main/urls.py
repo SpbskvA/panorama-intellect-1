@@ -11,5 +11,6 @@ urlpatterns = [
 	path('confirmation', views.confirmation, name='confirmation'),
 	path('suggest', views.suggest, name='suggest'),
 	path('previewoffers', views.previewoffers, name='previewoffers'),
+	path('onoffnotify', views.onoffnotify, name='onoffnotify'),
 	# path('about', views.about, name='usermode'),
 ]
