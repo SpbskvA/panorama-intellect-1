@@ -3,3 +3,4 @@
 static/
 !main/static
 *.sh
+local
