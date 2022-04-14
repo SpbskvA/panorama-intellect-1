@@ -23,7 +23,7 @@ TELEGRAM_KEYS = {
     #@PanoramaIntellectBot
     'prod' : '5144005351:AAF17je1fLUroxiFt_PAPyuwo9cE01UQq1o'
 }
-TELEGRAM_KEY = TELEGRAM_KEYS['test']
+TELEGRAM_KEY = TELEGRAM_KEYS['prod']
 
 
 # Quick-start development settings - unsuitable for production

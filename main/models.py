@@ -53,8 +53,12 @@ class OfferedArticle(Model):
 
     def save(self, *args, **kwargs):
         if self.is_accepted:
-            Article(name = self.name, info = self.info, image = self.image, date = self.date).save()
-            self.delete()
+            try:
+                Article(name = self.name, info = self.info, image = self.image, date = self.date).save()
+            except Exception as ex:
+                print(f"### CANNOT PUSH THE ARTICLE <EXCEPTION>:<{ex}> ###")
+            else:
+                self.delete()
         else:
             self.is_accepted = False
             super().save(*args, **kwargs)  # Call the "real" save() method.
