@@ -29,15 +29,15 @@ class Article(Model):
     date = DateField(auto_now_add = False, verbose_name = "Дата")
 
     def save(self, *args, **kwargs):
-        if not Article.objects.filter(id = self.id).exists():
-            try:
-                super().save(*args, **kwargs)
-            except Exception as ex:
-                print(f"### CANNOT SAVE THE ARTICLE <EXCEPTION>:<{ex}> ###")
-            else:
-                if settings.ENABLE_NOTIFICATIONS:
-                    for user in Subscriber.objects.all():
-                        bot.send_photo(int(user.tgid), self.image, 'На сайте "Панорама Интеллект" вышел новый пост😎:\n"{}"\nПодробнее -> https://panorama-intellect.me/'.format(self.name))
+        try:
+            super().save(*args, **kwargs)
+        except Exception as ex:
+            print(f"### CANNOT SAVE THE ARTICLE <EXCEPTION>:<{ex}> ###")
+        else:
+            if settings.ENABLE_NOTIFICATIONS and not Article.objects.filter(id = self.id).exists():
+                for user in Subscriber.objects.all():
+                    bot.send_photo(int(user.tgid), self.image, 'На сайте "Панорама Интеллект" вышел новый пост😎:\n"{}"\nПодробнее -> https://panorama-intellect.me/'.format(self.name))
+
 
     class Meta:
         ordering = ["-date","-id"]
