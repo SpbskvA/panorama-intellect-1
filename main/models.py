@@ -26,7 +26,7 @@ class Article(Model):
     name = TextField(verbose_name = "Заголовок")
     info = TextField(verbose_name = "Информация")
     image = TextField(verbose_name = "Картинка")
-    date = DateField(auto_now_add = True, verbose_name = "Дата")
+    date = DateField(auto_now_add = False, verbose_name = "Дата")
 
     def save(self, *args, **kwargs):
         new = False
@@ -40,7 +40,6 @@ class Article(Model):
             if settings.ENABLE_NOTIFICATIONS and new:
                 for user in Subscriber.objects.all():
                     bot.send_photo(int(user.tgid), self.image, 'На сайте "Панорама Интеллект" вышел новый пост😎:\n"{}"\nПодробнее -> https://panorama-intellect.me/'.format(self.name))
-
 
     class Meta:
         ordering = ["-date","-id"]
