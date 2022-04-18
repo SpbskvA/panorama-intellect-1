@@ -29,14 +29,15 @@ class Article(Model):
     date = DateField(auto_now_add = True, verbose_name = "Дата")
 
     def save(self, *args, **kwargs):
+        new = False
+        if not Article.objects.filter(id = self.id).exists():
+            new = True
         try:
             super().save(*args, **kwargs)
         except Exception as ex:
             print(f"### CANNOT SAVE THE ARTICLE <EXCEPTION>:<{ex}> ###")
         else:
-            print("settings.ENABLE_NOTIFICATIONS : {}".format(settings.ENABLE_NOTIFICATIONS))
-            print("article exist : {}".format(Article.objects.filter(id = self.id).exists()))
-            if settings.ENABLE_NOTIFICATIONS and not Article.objects.filter(id = self.id).exists():
+            if settings.ENABLE_NOTIFICATIONS and new:
                 for user in Subscriber.objects.all():
                     bot.send_photo(int(user.tgid), self.image, 'На сайте "Панорама Интеллект" вышел новый пост😎:\n"{}"\nПодробнее -> https://panorama-intellect.me/'.format(self.name))
 
