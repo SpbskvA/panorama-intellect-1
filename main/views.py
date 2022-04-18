@@ -70,7 +70,10 @@ def handler(message):
 
 polling = False
 def plg():
-    bot.polling(none_stop=True, interval=0)
+    try:
+        bot.polling(none_stop=True, interval=0)
+    except:
+        plg()
 
 def newspage(request):
     #if request.scheme == 'http' and request.META['HTTP_HOST'] != 'localhost:8000' and request.META['HTTP_HOST'] != '127.0.0.1:8000':

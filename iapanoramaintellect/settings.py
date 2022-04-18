@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 import os
 from pathlib import Path
 
-print(os.listdir())
 LOCAL = 'local' in os.listdir()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
