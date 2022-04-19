@@ -76,8 +76,6 @@ def plg():
         plg()
 
 def newspage(request):
-    #if request.scheme == 'http' and request.META['HTTP_HOST'] != 'localhost:8000' and request.META['HTTP_HOST'] != '127.0.0.1:8000':
-    #    return redirect('https://{}'.format(request.META['HTTP_HOST']))
     global polling
     if not polling:
         try:
@@ -85,10 +83,21 @@ def newspage(request):
             polling = True
         except Exception as ex:
             print(ex)
+
+    if request.method == "POST":
+        part = request.POST["search_request"]
+        articles = [article for article in Article.objects.all() if part.lower() in article.name.lower()]
+    else:
+        articles = Article.objects.all()
+
+    if articles == []:
+        articles = [Article(name = "По вашему запросу ничего не нашлось...😑", info = "", image = "https://http.cat/404", date = "-_-")]
+
     data = {
-        "articles" : Article.objects.all(),
-        "thispage" : 'https://{}'.format(request.META['HTTP_HOST'])
+        "articles" : articles,
+        "thispage" : 'https://{}'.format(request.META['HTTP_HOST']),
     }
+
     return render(request, 'main/main.html', data)
 
 def offerpage(request):
