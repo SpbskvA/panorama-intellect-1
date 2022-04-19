@@ -2,5 +2,4 @@
 *.sqlite3
 static/
 !main/static
-*.sh
 local

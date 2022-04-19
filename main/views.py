@@ -95,7 +95,7 @@ def newspage(request):
 
     data = {
         "articles" : articles,
-        "thispage" : 'https://{}'.format(request.META['HTTP_HOST']),
+        "thispage" : 'http://{}'.format(request.META['HTTP_HOST']),
     }
 
     return render(request, 'main/main.html', data)
