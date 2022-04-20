@@ -232,6 +232,11 @@ header a img{
 /*   z-index: 1; */
   animation: bounce 1.5s infinite;
 }
+
+.form:hover{
+    animation: none;
+}
+
 ::-webkit-input-placeholder {
   font-size: 1.3em;
 }
@@ -258,36 +263,16 @@ header a img{
   background-color: #ebebeb;
   color: black;
 }
-.name:hover {
-  border-bottom: 5px solid #0e3721;
-  height: 30px;
-  width: 380px;
-  transition: ease 0.5s;
-}
 
 .email {
   background-color: #ebebeb;
   height: 2em;
 }
 
-.email:hover {
-  border-bottom: 5px solid #0e3721;
-  height: 30px;
-  width: 380px;
-  transition: ease 0.5s;
-}
-
 .message {
   background-color: #ebebeb;
   overflow: hidden;
   height: 10rem;
-}
-
-.message:hover {
-  border-bottom: 5px solid #0e3721;
-  height: 12em;
-  width: 380px;
-  transition: ease 0.5s;
 }
 
 .formEntry {
@@ -329,6 +314,7 @@ header a img{
   border-top: 5px solid #0e3750;
   border-radius: 0%;
 }
+
 
 @keyframes bounce {
   0% {
