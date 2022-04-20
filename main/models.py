@@ -30,7 +30,7 @@ class Article(Model):
 
     def save(self, *args, **kwargs):
         new = False
-        if not Article.objects.filter(name = self.name, info = self.info, image = self.image, date = self.date).exists():
+        if self.id == None:
             new = True
         try:
             super().save(*args, **kwargs)

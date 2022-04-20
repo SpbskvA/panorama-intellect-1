@@ -16,19 +16,42 @@
     </div>
 </header>
 
-<body>
-    <div class="wrapper">
-        <form class="form" method="post">
-            {% csrf_token %}
-            <div class="pageTitle title">Предложить новость</div>
-            <div class="secondaryTitle title">Заполните поля новости</div>
-            <input name="name" type="text" class="name formEntry" placeholder="Название" />
-            <input name="image" type="text" class="email formEntry" placeholder="Ссылка на картинку" />
-            <textarea name="info" class="message formEntry" placeholder="Сама новость"></textarea>
-            <button type="reset" class="clear formEntry">Очистить</button>
-            <button type="submit" class="submit formEntry">Отправить</button>
-        </form>
+<body onload="Loaded()">
+    <div class="main">
+        <div class="wrapper">
+            <form class="form" method="post">
+                {% csrf_token %}
+                <div class="pageTitle title">Предложить новость</div>
+                <div class="secondaryTitle title">Заполните поля новости</div>
+                <input id="inputname" name="name" type="text" class="name formEntry" placeholder="Название" />
+                <input id="inputimage" name="image" type="text" class="email formEntry" placeholder="Ссылка на картинку" />
+                <textarea id="inputinfo" name="info" class="message formEntry" placeholder="Сама новость"></textarea>
+                <button type="reset" class="clear formEntry">Очистить</button>
+                <button type="submit" class="submit formEntry">Отправить</button>
+            </form>
+        </div>
+        <div class="preview">
+            <figure class="article">
+                <div class="content">
+                    <img id="image" class="image" src=""/>
+                    <div id="date" class="date">Предпросмотр</div>
+                    <p></p>
+                    <h3 id="name"></h3>
+                    <p id="info"></p>
+                </div>
+            </figure>
+        </div>
     </div>
+    <script type="text/javascript">
+        function Preview(){
+            document.querySelector('#name').innerHTML = document.querySelector('#inputname').value;
+            document.querySelector('#image').src = document.querySelector('#inputimage').value;
+            document.querySelector('#info').innerHTML = document.querySelector('#inputinfo').value.split('\n').join('<br>');
+        }
+        function Loaded(){
+            setInterval(Preview, 100);
+        }
+    </script>
 </body>
 
 </html>

@@ -1,3 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700");
+
+* {
+    font-family: Open Sans;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+*::-webkit-scrollbar {
+    width: 12px;
+    /* ширина scrollbar */
+}
+*::-moz-scrollbar {
+    width: 12px;
+    /* ширина scrollbar */
+}
+
+*::-webkit-scrollbar-track {
+    background: #7f577e;
+    border-radius: 0px;
+    border-radius: 20px;
+}
+*::-moz-scrollbar-track {
+    background: #7f577e;
+    border-radius: 0px;
+    border-radius: 20px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #2d2f2f;
+    /* цвет плашки */
+    border-radius: 20px;
+    /* закругления плашки */
+    border: 3px solid #57b380;
+    /* padding вокруг плашки */
+}
+*::-moz-scrollbar-thumb {
+    background-color: #2d2f2f;
+    /* цвет плашки */
+    border-radius: 20px;
+    /* закругления плашки */
+    border: 3px solid #57b380;
+    /* padding вокруг плашки */
+}
+
+
 body {
   background-color: #d1f3e7;
 }
@@ -10,6 +61,143 @@ header {
     height: 7.5em;
     /* Высота шапки */
     text-decoration-color: white;
+}
+
+.article .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.article .content *{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.article {
+    font-family: 'Open Sans', Arial, sans-serif;
+    float: left;
+    overflow: auto;
+    margin: 20px 1.3%;
+    min-width: 360px;
+    max-width: 360px;
+    min-height: 535px;
+    max-height: 535px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #000000;
+    /* шрифт */
+    text-align: left;
+    font-size: 16.25px;
+    font-weight: 550;
+    box-shadow: 0 0 16.5px #d2e6e4;
+}
+
+.article * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.article:after {
+    position: absolute;
+    top: 12px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 25px 0 25px 25px;
+    border-color: transparent transparent transparent #d2652d;
+    /* стрелки */
+    content: '';
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.article img {
+    max-width: 100%;
+    vertical-align: top;
+    position: relative;
+}
+
+.article .content {
+    padding: 10px 10px 10px;
+}
+
+.article .date {
+    background-color: #8ab5b0;
+    top: 15px;
+    color: #fff;
+    right: 15px;
+    min-height: 30px;
+    min-width: 48px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+
+.article .date span {
+    display: block;
+    line-height: 14px;
+}
+
+.article .date .month {
+    font-size: 11px;
+}
+
+.article h3,
+.article p {
+    margin: 0;
+    padding: 0;
+}
+
+.article h3 {
+    margin-bottom: 10px;
+    display: inline-block;
+    font-weight: 700;
+}
+
+.article p {
+    font-size: 0.8em;
+    margin-bottom: 20px;
+    font-style: italic;
+    line-height: 1.6em;
+}
+
+.article a {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: 1;
+}
+
+.article:hover:after,
+.article.hover:after {
+    -webkit-transform: translateX(1%);
+    transform: translateX(1%);
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.wrapper{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.preview{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 header a img{
@@ -38,13 +226,8 @@ header a img{
   box-shadow: 0 30px 60px 0 rgba(90, 116, 148, 0.4);
   border-radius: 5px;
   max-width: 480px;
-  margin-left: auto;
-  margin-right: auto;
   padding-top: 5px;
   padding-bottom: 5px;
-  left: 0;
-  right: 0;
-  position: absolute;
   border-top: 5px solid #0e3721;
 /*   z-index: 1; */
   animation: bounce 1.5s infinite;
